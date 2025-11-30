@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - GameNexus</title>
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="js/payment.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <base target="_self">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/logo.png" alt="GameNexus Logo" width="32" height="32">
+            </a>
+            <a class="bungee-shade-regular" href="home.html">GameNexus</a>
+        </div>
+        <p class="aldrich-regular header">
+            <span class="pages">
+                <a href="home.html">HOME</a>
+            </span>
+            <span class="pages">
+                <a href="categories.html">CATEGORIES</a>
+            </span>
+            <span class="pages">
+                <a href="top.html">PRODUCTS</a>
+            </span>
+        </p>
+        <div class="search-container">
+            <form action="categories.html">
+                <input type="text" class="inria-sans-regular search-input" placeholder="Search">
+                <input type="submit" hidden>
+            </form>
+        </div>
+        <div class="cart">
+            <a href="cart.html">
+                <img src="images/cart.png" alt="Cart" width="24" height="24">
+                <div class="circle">
+                    <span class="number">0</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="login.html">
+                <button class="inria-sans-regular box-button">
+                    Login
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="signup.html">
+                <button class="inria-sans-regular signup-button" style="box-shadow: 0 0 25px #34F584">
+                    Sign Up
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading">CHECKOUT</div>
+        <div class="two-box">
+            <div class="details">
+                <div class="head">Billing Details</div>
+                <div class="name">
+                    <div class="first-name">
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    <div class="last-name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="address">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div class="more-add">
+                    <div class="city">
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="zip">
+                        <input type="text" placeholder="Zip Code">
+                    </div>
+                </div>
+                <div class="country-section">
+                    <select class="country">
+                        <option value="">Select Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                <div class="pay-opt">
+                    <p>Payment options : Cash on delivery only</p>
+                </div>
+                <div>
+                    <button type="button" class="pay-btn">Place Order</button>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="sum-head">Order Summary
+                </div>
+                <div class="product">
+                    <div class="prod">
+                        <img src="images/product1.png" class="prod-img">
+                        <div class="prod-name">Spectus Gaming Keyboard</div>
+                        <div class="prod-price">$129.99</div>
+                        <div class="qty">1</div>
+                    </div>
+                    <div class="prod">
+                        <img src="images/product1.png" class="prod-img">
+                        <div class="prod-name">Spectus Gaming Keyboard</div>
+                        <div class="prod-price">$129.99</div>
+                        <div class="qty">12</div>
+                    </div>
+                    <div class="prod">
+                        <img src="images/product1.png" class="prod-img">
+                        <div class="prod-name">Spectus Gaming Keyboard</div>
+                        <div class="prod-price">$129.99</div>
+                        <div class="qty">1</div>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="line"></div>
+                    <div class="subtotal-box">
+                        <div class="sub-total">Subtotal:</div>
+                        <div class="sub-total-price">$0.00</div>
+                    </div>
+
+                    <div class="shipping-box">
+                        <div class="shipping">Shipping:</div>
+                        <div class="shipping-price">$5.00</div>
+                    </div>
+
+                    <div class="line"></div>
+                </div>
+                <div class="total">
+                    <div>Total: </div>
+                    <div class="total-price">$0</div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="end">
+
+            <div>
+                <h3>GameNexus</h3>
+                <p>Unleash Your Gaming Potential</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: support@gamenexus.com</p>
+                <p>Phone: +92 333 5004508</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+            <div>
+                © 2025 GameNexus. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
