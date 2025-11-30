@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.bungee-shade-regular {
+    font-family: 'Bungee Shade', sans-serif;
+    color: #34F584;
+    font-size: 32px;
+}
+
+.aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inria-sans-regular {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 2%;
+    gap: 0.5rem;
+    border-bottom: 2px solid #34F584;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: auto;
+    gap: 0.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header {
+    color: #A9A9A9;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    text-shadow: 0px 10px 5px #A9A9A9;
+}
+
+.cart {
+    margin-left: 5px;
+    margin-right: 2%;
+    position: relative;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #34F584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.number {
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container {
+    margin-left: auto;
+}
+
+.search-input {
+    font-size: 18px;
+    display: block;
+    background-color: #1C1C1C;
+    background-image: url('../images/magnifying-glass.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    border-radius: 10px;
+    border: 1px solid #34F584;
+    height: 28px;
+    width: 200px;
+    color: white;
+    padding: 6px 10px 6px 36px;
+    transition: width .25s ease-in-out;
+}
+
+.search-input:focus {
+    width: 300px;
+}
+
+span {
+    background-color: inherit;
+}
+
+.pages {
+    margin: 10px;
+}
+
+a {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+div,
+form {
+    background-color: inherit;
+}
+
+header .signup-button,
+header .box-button {
+    font-size: 22px;
+    background-color: #34F584;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    margin: 2% auto;
+    color: black;
+    cursor: pointer;
+    border-color: #34F584;
+    transition-duration: 0.1s;
+}
+
+.heading {
+    font-family: "Aldrich", sans-serif;
+    color: #34F584;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.details {
+    margin: 50px;
+    width: auto;
+    height: 450px;
+    border: 2px solid #34F584;
+    border-radius: 5px;
+    background-color: #0F0F0F;
+}
+
+.head {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.name {
+    color: white;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.first-name,
+.last-name {
+    width: 45%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.name input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.address {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90.5%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.address input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.more-add {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.city,
+.zip {
+    width: 45%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.more-add input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.country-section {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90.5%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.country {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.country option {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.country:hover {
+    cursor: pointer;
+}
+
+.pay-btn {
+    width: 90.5%;
+    height: 50px;
+    background-color: #34F584;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 24px;
+    font-family: "Aldrich", sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pay-btn:hover {
+    background-color: #28C76F;
+    transform: translateY(-4px);
+
+}
+
+.pay-opt {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90.5%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.pay-opt p {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Aldrich", sans-serif;
+
+}
+
+.two-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.summary {
+    margin: 50px;
+    width: auto;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+}
+
+.sum-head {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Aldrich", sans-serif;
+}
+
+.product {
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.prod {
+    display: flex;
+    margin: 5px;
+}
+
+.prod-name {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.prod1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #0F0F0F;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.prod-price {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 8%;
+    font-family: "Aldrich", sans-serif;
+}
+
+.prod-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.line {
+    height: 1px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.subtotal-box {
+    display: flex;
+}
+
+.sub-total-price {
+    color: white;
+    font-family: "Aldrich", sans-serif;
+    margin-left: auto;
+}
+
+.sub-total {
+    color: white;
+    font-family: "Aldrich", sans-serif;
+
+}
+
+.shipping {
+    margin-top: 2px;
+    color: white;
+    font-family: "Aldrich", sans-serif;
+
+}
+
+.shipping-box {
+    display: flex;
+}
+
+.shipping-price {
+    color: white;
+    font-family: "Aldrich", sans-serif;
+    margin-left: auto;
+}
+
+.total {
+    display: flex;
+    color: #34F584;
+    font-family: "Aldrich", sans-serif;
+    margin-left: 8px;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.qty {
+    margin-top: 10px;
+    color: #A9A9A9;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 20px;
+    font-family: "Aldrich", sans-serif;
+}
+
+.end {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, #2E2E2E, #1C1C1C);
+    border-top: 2px solid #34F584;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #A9A9A9;
+    font-family: "Aldrich", sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px 5%;
+    }
+
+    .header {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .categories-cont {
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .category-box {
+        width: 220px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .category-box img {
+        width: 120px;
+    }
+
+    .price {
+        margin-left: auto;
+    }
+
+    .add {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bungee-shade-regular {
+        font-size: 24px;
+    }
+    .two-box{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .header {
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .categories-cont {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .category-box {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .category-box img {
+        width: 100px;
+    }
+
+    .Imageheading,
+    .subhead {
+        position: static;
+        width: 90%;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 28px;
+    }
+
+    .subhead {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    header .signup-button,
+    header .box-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bungee-shade-regular {
+        font-size: 20px;
+    }
+    .two-box{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .category-box p {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .add {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

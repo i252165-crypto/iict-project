@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - GameNexus</title>
+    <script src="js/cart.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <base target="_self">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/logo.png" alt="GameNexus Logo" width="32" height="32">
+            </a>
+            <a class="bungee-shade-regular" href="home.html">GameNexus</a>
+        </div>
+        <p class="aldrich-regular header">
+            <span class="pages">
+                <a href="home.html">HOME</a>
+            </span>
+            <span class="pages">
+                <a href="categories.html">CATEGORIES</a>
+            </span>
+            <span class="pages">
+                <a href="top.html">PRODUCTS</a>
+            </span>
+        </p>
+        <div class="search-container">
+            <form action="categories.html">
+                <input type="text" class="inria-sans-regular search-input" placeholder="Search">
+                <input type="submit" hidden>
+            </form>
+        </div>
+        <div class="cart">
+            <a href="cart.html">
+                <img src="images/cart.png" alt="Cart" width="24" height="24">
+                <div class="circle">
+                    <span class="number">0</span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="login.html">
+                <button class="inria-sans-regular box-button">
+                    Login
+                </button>
+            </a>
+        </div>
+        <div>
+            <a href="signup.html">
+                <button class="inria-sans-regular signup-button" style="box-shadow: 0 0 25px #34F584">
+                    Sign Up
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading">YOUR SHOPPING CART</div>
+        <div class="two-box">
+            <div class="shoppingcart">
+                <div class="cart-item">
+                    <img src="images/product1.png" class="item-img">
+
+                    <div class="item-details">
+                        <div class="item-title">Spectus Gaming Keyboard</div>
+                        <div class="item-sub"> $129.99 per item </div>
+                    </div>
+
+                    <div class="qty-box">
+                        <button class="decrement-btn">-</button>
+                        <div class="qty-num">01</div>
+                        <button class="increment-btn">+</button>
+                    </div>
+
+                    <div class="item-price">$129.99</div>
+
+                    <div class="remove-btn">X</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="images/product1.png" class="item-img">
+
+                    <div class="item-details">
+                        <div class="item-title">Spectus Gaming Keyboard</div>
+                        <div class="item-sub"> $129.99 per item </div>
+                    </div>
+
+                    <div class="qty-box">
+                        <button class="decrement-btn">-</button>
+                        <div class="qty-num">01</div>
+                        <button class="increment-btn">+</button>
+                    </div>
+
+                    <div class="item-price">$129.99</div>
+
+                    <div class="remove-btn">X</div>
+                </div>
+
+                <div class="cart-item">
+                    <img src="images/product1.png" class="item-img">
+
+                    <div class="item-details">
+                        <div class="item-title">Spectus Gaming Keyboard</div>
+                        <div class="item-sub"> $129.99 per item </div>
+                    </div>
+
+                    <div class="qty-box">
+                        <button class="decrement-btn">-</button>
+                        <div class="qty-num">01</div>
+                        <button class="increment-btn">+</button>
+                    </div>
+
+                    <div class="item-price">$129.99</div>
+
+                    <div class="remove-btn">X</div>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h2 class="summary-title">ORDER SUMMARY</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="Subtotal">$270.99</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="ship">$7.99</span>
+                </div>
+
+                <hr class="summary-divider">
+
+                <div class="summary-row total-row">
+                    <span>TOTAL</span>
+                    <span class="Total">$284.99</span>
+                </div>
+
+                <button class="checkout-btn" onclick="location.href='payment.html'">Proceed to Checkout</button>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="end">
+
+            <div>
+                <h3>GameNexus</h3>
+                <p>Unleash Your Gaming Potential</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: support@gamenexus.com</p>
+                <p>Phone: +92 333 5004508</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a>
+                </p>
+            </div>
+            <div>
+                © 2025 GameNexus. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
